@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Github, Twitter, Linkedin, Mail, MapPin } from "lucide-react";
 
+
 export const Footer = () => {
   return (
     <footer className="bg-background border-t border-border py-16">
@@ -8,10 +9,12 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-lg font-bold text-primary-foreground">AI</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/lovable-uploads/30b2a6ce-a5fd-4249-862b-fa5927fcd2e9.png" 
+                alt="Lee County AI Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <span className="text-2xl font-bold text-foreground">Lee County AI</span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -43,6 +46,11 @@ export const Footer = () => {
               <li>
                 <a href="#resources" className="text-muted-foreground hover:text-primary transition-colors">
                   Resources
+                </a>
+              </li>
+              <li>
+                <a href="#founders" className="text-muted-foreground hover:text-primary transition-colors">
+                  Founders
                 </a>
               </li>
               <li>
